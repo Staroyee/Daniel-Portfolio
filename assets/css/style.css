@@ -4,9 +4,17 @@
     margin: 0;
 }
 
+:root {
+    --title: #00aeff;
+    --dark-grey: rgb(42, 44, 48);
+    --grid-background: rgba(255, 255, 255, 0.8);
+}
+
+
 body {
     background-color: #fff;
     height: auto;
+    width: auto;
 }
 
 .header {
@@ -22,7 +30,7 @@ body {
 .name {
     padding: 20px 10px;
     border: 2px solid #ffffff;
-    background-color: #0088c7;
+    background-color: var(--title);
     display: flex;
 }
 
@@ -56,7 +64,7 @@ body {
     text-decoration: none;
     border-bottom: 3px solid;
     padding: 5px;
-    color: #0088c7;
+    color: var(--title);
 }
 
 .hero-image {
@@ -71,28 +79,28 @@ body {
 
 .container {
     float: right;
-    margin-top: 370px;
+    margin-top: 220px;
     margin-right: 60px;
     overflow: hidden;
     text-align: right;
     color: white;
     font-weight: 700;
-    background-color: rgb(42, 44, 48);
+    background-color: var(--dark-grey);
 }
 
 .container h2 {
     font-size: 40px;
-    border: 3px solid #fff;
+    border: 3px solid white;
     padding: 15px;
 }
 
 .aside-decoration {
     text-decoration: none;
-    color: #0088c7;
+    color: var(--title);
 }
 
 .main-grid {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: var(--grid-background);
   padding: 20px;
   font-size: 30px;
   text-align: center;
@@ -100,7 +108,7 @@ body {
 }
 
 .section-grid {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: var(--grid-background);
     padding: 20px;
     font-size: 30px;
     text-align: center;
@@ -117,7 +125,7 @@ main {
     height: 40vh;
     width: 33.3%;
     float: left;
-    border-right: 3px solid rgb(42, 44, 48);
+    border-right: 3px solid var(--dark-grey);
 }
 
 main div {
@@ -132,8 +140,8 @@ aside h3 {
     float: right;
     padding: 20px;
     font-size: 30px;
-    border: 3px solid rgb(42, 44, 48);
-    background-color: rgb(138, 142, 153);
+    border: 3px solid black;
+    background-color: var(--dark-grey);
 }
 
 .about-me-para {
@@ -149,7 +157,7 @@ aside h3 {
     height: 100vh;
     width: 33.3%;
     float: left;
-    border-right: 3px solid rgb(42, 44, 48);
+    border-right: 3px solid var(--dark-grey);
 }
 
 .avatar {
@@ -157,6 +165,85 @@ aside h3 {
     float: left;
     background-size: cover; 
     height: 300px;
-    width: 270px;
+    width: 500px;
     margin: 100px 20px;
-  }
+}
+
+.flexbox {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+    padding: 0px 20px; 
+}
+
+.flexbox2 {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: row;
+    margin-left: 10px;
+    margin: 0;
+    padding: 0px 0px; 
+}
+
+.img-border {
+    display: inline-block;
+    position: relative;
+    padding: 0px;
+    border: 3px solid black;
+}
+
+.prework {
+   width: 90%;
+}
+
+.prework-img-title {
+    position: absolute;
+    bottom: 10px;
+    left: 0px;
+    padding: 10px 10px;
+    border: 3px solid black;
+    background-color: var(--dark-grey);
+    color: var(--title);
+}
+
+.work-images {
+    width: 430px;
+    height: 300px;
+}
+
+@media screen and (max-width: 1105px) {
+    .hero-image {
+        position: relative;
+        height: 800px;
+        width: 100%;
+        overflow: hidden;
+        background-image: url(../images/hero.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }    
+
+    .container {
+        float: right;
+        margin-top: 220px;
+        margin-right: 60px;
+        overflow: hidden;
+        text-align: right;
+        color: white;
+        font-weight: 700;
+        background-color: var(--dark-grey);
+    }
+
+    .avatar {
+        background-image: url(../images/avatar.jpg);
+        float: left;
+        background-size: cover; 
+        height: 300px;
+        width: 500px;
+        margin: 100px 20px;
+    }
+}
