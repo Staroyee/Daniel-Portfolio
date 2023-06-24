@@ -3,18 +3,18 @@
     margin: 0;
     /* max-width: 100%; */
 }
-
+/* Colour Selectors */
 :root {
     --title: #00aeff;
     --dark-grey: rgb(42, 44, 48);
     --grid-background: rgba(255, 255, 255, 0.8);
 }
-
+/* Body Selectors/Content */
 body {
     background-color: #fff;
 }
 
-/* Header - Selectors */
+/* Header - Selectors/Content*/
 .header {
     position: relative;
     margin: auto;
@@ -67,7 +67,7 @@ body {
     padding: 5px;
     color: var(--title);
 }
-/* Hero - Selectors */
+/* Hero - Selectors/Content */
 
 .hero-image {
     background-image: url(../images/hero.jpg);
@@ -97,7 +97,7 @@ body {
     background-color: var(--dark-grey);
 }
 
-/* Main - Section Selectors*/
+/* Main - Section Selectors/Content*/
 
 main section{
     display: flex;
@@ -135,7 +135,7 @@ p {
     text-align: center;
 }
 
-/* Image - Selectors */
+/* Image - Selectors/Content */
 
 main section div a img {
     display: flex;
@@ -162,7 +162,7 @@ main section div a img:hover:not(.disabled) {
 
 
 
-/* Footer - Section Div Ul Li */
+/* Footer - Selectors/Content */
 
 footer section {
     display: flex;
@@ -198,7 +198,7 @@ li {
     color: var(--title);
 }
 
-
+/* Media Queries for a responsive structure */
 @media  screen and (max-width: 1384px) {
     .img-size {
         width: 600px;
