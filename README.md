@@ -35,7 +35,7 @@ Steps to install this project on your local PC
 To navigate the site click on one of the different headings in the header at the top of the page to jump to each individual topic.
 
 ## Deployed Application Link
-
+https://staroyee.github.io/Daniel-Portfolio/
 
 ## Screenshot
 The page was too large to fit onto my screen in one screenshot. I have provided two screenshots to make it show the entire page seamlessly through both screenshots.
