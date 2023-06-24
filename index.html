@@ -13,23 +13,24 @@
         <nav>
             <ul>
                 <li>
-                    <a class="header-decoration" href="#About-me">About Me</a>
+                    <a class="header-decoration" href="#about-me">About Me</a>
                 </li>
                  <li>
                     <a class="header-decoration" href="#portfolio">Portfolio</a>
                 </li>
                 <li>
-                    <a class="header-decoration"  href="#contact">Contact</a>
+                    <a class="header-decoration"  href="#contact-me">Contact Me</a>
                 </li>
                 <li>
-                    <a class="header-decoration"  href="#Resume">Resume</a>
+                    <a class="header-decoration"  href="#resume">Resume</a>
                 </li>
             </ul>
         </nav>
     </header>
 
 <section class="hero-image">
-    <div class="avatar"></div></h3>
+    <div class="avatar"><img class="avatar-size" src="./assets/images/avatar.jpg" alt="an image"></div>
+    
     <div class="container">
         <h2>Welcome to my portfolio</h2>
     </div>
@@ -37,71 +38,59 @@
 </section>
 
 <main>
-    <section class="parent">
-        <div class="child1">
-        <h3><a class ="decoration" href="#about-me">About Me</a></h3>
-        </div>
-        <div class="child2">
-        <p class="about-me-para">Hello there! My name is Daniel Masefield, and I am an Adelaide based full stack web developer. My skills include HTML + CSS + JavaScript.</p>
-        <p class="about-me-para">Please use the navigation bar at the top of the page or scroll to view my work.</p>
+    <section id="about-me">
+        <h3 class="left-flex"><a class ="decoration">About Me</a></h3>
+        <div class="flex-paragraph">
+        <p >Hello there! My name is Daniel Masefield, and I am an Adelaide based full stack web developer. My skills include HTML + CSS + JavaScript.</p>
+        <p >Please use the navigation bar at the top of the page or scroll to view my work.</p>
         </div>
     </section>
-    <section class="parent">
-        <div class="child1">
-            <h4><a class ="decoration" href="#work">Work</a></h4>
-        </div>   
-            <div class="child2">
-                <div class="child3">
+    <section id="portfolio">
+            <h3 class="left-flex"><a class ="decoration">Work</a></h3> 
+            <div class="right-flex">
                     <a href="https://staroyee.github.io/Prework-Study-Guide/">
-                        <img src="./assets/images/prework-sg.JPG" alt="an image"><figcaption class="img-title">Study Guide</figcaption>
+                        <img class="img-size" src="./assets/images/prework-sg.JPG" alt="an image"><figcaption class="img-title">Study Guide</figcaption>
                     </a>
-                </div> 
-                    <div class="child3">  
                         <a href="https://github.com/Staroyee/Code-Refactor-Module-1-Daniel-Masefield">
-                            <img class="img-size" src="./assets/images/Code-Refractor.JPG" alt="an image"><figcaption class="img-title">Refractor</figcaption>
+                            <img class="img-size" src="./assets/images/Code-Refractor.JPG" alt="an image"><figcaption class="img-title">Refractor Repo.</figcaption>
                         </a>
-                    </div>
-                        <div class="child3">
                             <a href="https://staroyee.github.io/Code-Refactor-Module-1-Daniel-Masefield/">
                                 <img class="img-size" src="./assets/images/horision.JPG" alt="an image"><figcaption class="img-title">Horiseon</figcaption>
                             </a>
-                        </div> 
-                    <div class="child3">
                         <a href="https://github.com/Staroyee/Daniel-Portfolio">
-                            <img class="img-size" src="./assets/images/Portfolio.JPG" alt="an image"><figcaption class="img-title">Portfolio</figcaption>
+                            <img class="img-size" src="./assets/images/Portfolio.JPG" alt="an image"><figcaption class="img-title">Portfolio Repo.</figcaption>
                         </a>
-                    </div>
-                <div class="child3">
                     <a href="https://github.com/Staroyee/Daniel-Portfolio">
                         <img class="img-size" src="./assets/images/fabulous-trash.JPG" alt="an image"><figcaption class="img-title">Fabulous Trash</figcaption>
                     </a>
                 </div>
-            </div>
-        </div>
     </section> 
 </main>
-<footer class="parent">
-    <div class="child1">
-        <h4><a class ="decoration" href="#contact">Contact</a></h4>
+<footer>
+    <section id="contact-me">
+    <div class="contact-flex">
+        <h3><a class ="decoration">Contact Me</a></h3>
     </div>
-    <ul class="child4">
-        <li>
-            PH. 0400-000-000
+    <div class="right-flex">
+    <ul>
+        <li class="underline">
+            Phone
         </li>
-        <li>
-            danmasefield@website.com
+        <li class="underline">
+            Email
         </li>
-        <li>
+        <li class="underline">
             GitHub
         </li>
-        <li>
+        <li class="underline">
             Twitter
         </li>
-        <li>
+        <li class="underline">
             Spotify
         </li>
     </ul>
-
+    </div>
+</section>
 </footer>
 </body>
 </html>
