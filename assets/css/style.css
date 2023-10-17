@@ -200,6 +200,11 @@ li {
 
 /* Media Queries for a responsive structure */
 @media  screen and (max-width: 1384px) {
+    .first-img {
+        height: 500px;
+        width: 700px;
+    }
+
     .img-size {
         width: 600px;
     } 
@@ -240,12 +245,22 @@ li {
 }
 
 @media  screen and (max-width: 1370px) {
+    .first-img {
+        height: 500px;
+        width: 700px;
+    }
+
     .img-size {
         width: 509px;
     } 
 }
 
 @media  screen and (max-width: 1070px) {
+    .first-img {
+        height: 500px;
+        width: 700px;
+    }
+
     main section div a img {
         display: flex;
         border: black solid 5px;
